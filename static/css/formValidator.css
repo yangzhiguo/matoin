@@ -1,0 +1,5 @@
+.onShow, .onFocus, .onError, .onCorrect, .onLoad{display:inline;margin-left:10px}
+.onShow, .onFocus{color:#AAAAAA}
+.onError{color:#FF7A9C}
+.onCorrect{color:#588C0E}
+.onLoad{color:#959595}

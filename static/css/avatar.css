@@ -1,0 +1,9 @@
+#bigwarp,#midsmlwarp{margin:10px 0 0 50px;float:left;text-align:center}
+#bigwarp,#big{width:200px;width:200px}
+#big,#mid,#sml{overflow:hidden}
+#big{height:200px}
+#midsmlwarp,#mid,.midt{width:120px}
+#sml,.smlt{width:50px}
+#mid{height:120px;float:left}
+#sml{height:50px;float:right}
+#thumbnails{width:360px;height:360px;background:url(../image/upbg.png) center center no-repeat;float:left;border:5px #F2F2F2 solid;position:relative}
