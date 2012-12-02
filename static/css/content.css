@@ -59,7 +59,7 @@ a.btn:active, input.btn:active, button.btn:active{background:#518C15}
 input.cbox{margin-right:3px;vertical-align:-2px}
 /*header*/
 .main-nav, .top-header{margin:0 auto;height:45px}
-.top-header{background:#518C15 url(../image/nav_bg.png) repeat-x;width:100%;min-width:960px;box-shadow:0 0 3px rgba(0,0,0,0.2);position:fixed;z-index:898;top:0;left:0;opacity:.9;filter:alpha(opacity=90)}
+.top-header{background:url(../image/nav_bg.png) repeat-x;width:100%;min-width:960px;box-shadow:0 0 3px rgba(0,0,0,0.2);position:fixed;z-index:898;top:0;left:0;}
 .main-nav, .main-nav a{color:#FFB}
 .main-nav a:hover{color:#FFF}
 #nav-list{float:left;margin-left:12px}
