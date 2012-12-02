@@ -28,7 +28,7 @@ $lang['chkemail_tpl_content'] = '
 </head>
 <body>
 %s您好:<br />
-感谢你您用 猫头鹰（maotin.com），请点击以下链接完成邮箱验证：<br />
+感谢你您用 猫头鹰（matoin.com），请点击以下链接完成邮箱验证：<br />
 {unwrap}<a href="%s">%s</a>{/unwrap}<br />
 （如果以上链接无法点击，您可以复制该地址到您的浏览器地址栏中访问）<br />
 猫头鹰团队<br />
@@ -44,7 +44,7 @@ $lang['lostpwd_tpl_content'] = '
 </head>
 <body>
 %s您好:<br />
-您在猫头鹰（maotin.com）申请了重置密码，您可以点击以下链接修改您的密码：
+您在猫头鹰（matoin.com）申请了重置密码，您可以点击以下链接修改您的密码：
 {unwrap}<a href="%s">%s</a>{/unwrap}<br />
 （如果您不需要修改密码，或者从未申请密码重置，请忽略本邮件。）<br />
 猫头鹰团队<br />

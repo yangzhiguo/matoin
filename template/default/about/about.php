@@ -1,6 +1,6 @@
 <?php  if (!defined('BASEPATH')) exit('No direct script access allowed');
 /**
- * maotin-sae
+ * matoin-sae
  *
  * An open source application development framework for PHP 5.3 or newer
  *
@@ -26,7 +26,7 @@
                 <p>如何在浩如烟海的图片中寻找你喜欢的图片？怎样才能找到和你的审美和时尚品位相似的朋友？到底是谁跟我的生活方式很像呢？在猫头鹰，这一切都会有个完美的答案。</p>
                 <p>我们鼓励你通过点击成员的名号或头像访问别人的个人主页，并充实自己的收藏或评论。这些是你们来到这里能带给别人最重要和有益的事。</p><br />
                 <p>一切听起来很有趣，实现起来可不容易，有了大家的贡献，我们会努力做得更好。</p><br />
-                <p>有任何疑问或建议，请邮件至admin@maotin.com，同时也欢迎加入我们的QQ群：<span class="b">230243937</span></p>
+                <p>有任何疑问或建议，请邮件至admin@matoin.com，同时也欢迎加入我们的QQ群：<span class="b">230243937</span></p>
             </div>
             <h3 class="mb10 mt20">猫头鹰人生历程</h3>
             <p><span class="c-9">2012年11月</span><span class="b pl20">猫头鹰内测版诞生。</span></p>

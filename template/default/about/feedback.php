@@ -1,6 +1,6 @@
 <?php  if (!defined('BASEPATH')) exit('No direct script access allowed');
 /**
- * maotin-sae
+ * matoin-sae
  *
  * An open source application development framework for PHP 5.3 or newer
  *
@@ -22,7 +22,7 @@
             <p>
                 在使用猫头鹰的过程中，有何意见、建议、不爽，欢迎向我们吐槽。<br />
                 这里是我们美好的栖息之地，建设一个美丽的家园，离不开猫头鹰的每一位朋友。<br /><br />
-                有任何疑问或建议，请邮件至admin@maotin.com，同时也欢迎加入我们的QQ群：230243937
+                有任何疑问或建议，请邮件至admin@matoin.com，同时也欢迎加入我们的QQ群：230243937
             </p>
         </div>
     </article>

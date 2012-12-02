@@ -1,17 +1,17 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 /**
- * Maotin System
+ * matoin System
  *
- * 猫头鹰Maotin - 寻找最有价值的东西
+ * 猫头鹰matoin - 寻找最有价值的东西
  *
- * Maotin - to help you find the most valuable thing
+ * matoin - to help you find the most valuable thing
  *
- * @package    Maotin
+ * @package    matoin
  * @author     yzg <yangzhiguo0903@gmail.com>
- * @copyright  Copyright (c) 2011 - 2012, maotin.com.
+ * @copyright  Copyright (c) 2011 - 2012, matoin.com.
  * @license    GNU General Public License 2.0
- * @link       http://www.maotin.com/
+ * @link       http://www.matoin.com/
  * @version    $Id: admincp.php 1193 2012-02-18 22:42 $
  */
 
@@ -20,11 +20,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
 /**
  * 管理台
  *
- * @package     Maotin
+ * @package     matoin
  * @subpackage  Controllers
  * @category    Admincp-Controllers
  * @author      yzg <yangzhiguo0903@gmail.com>
- * @link        http://www.maotin.com/
+ * @link        http://www.matoin.com/
  */
 class Admincp extends MT_admincp
 {

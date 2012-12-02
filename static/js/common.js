@@ -30,7 +30,7 @@ function parsejson(str){
 function redirect(url){
     url = isUndefined(url) ? '' : url;
     if(!url.match(/http[s]?:\/\//)){
-        url = 'http://localhost/maotin/trunk/' + url;
+        url = 'http://localhost/matoin/trunk/' + url;
     }
     window.location.href = url;
 }

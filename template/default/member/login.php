@@ -1,17 +1,17 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 /**
- * Maotin System
+ * matoin System
  *
- * 猫头鹰Maotin - 寻找最有价值的东西
+ * 猫头鹰matoin - 寻找最有价值的东西
  *
- * Maotin - to help you find the most valuable thing
+ * matoin - to help you find the most valuable thing
  *
- * @package    Maotin
+ * @package    matoin
  * @author     yzg <yangzhiguo0903@gmail.com>
- * @copyright  Copyright (c) 2011 - 2012, maotin.com.
+ * @copyright  Copyright (c) 2011 - 2012, matoin.com.
  * @license    GNU General Public License 2.0
- * @link       http://www.maotin.com/
+ * @link       http://www.matoin.com/
  * @version    $Id login.php v1.0.0 2012-01-10 23:59 $
  */
 
@@ -22,11 +22,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
  *
  * 登录页面模版
  *
- * @package     Maotin
+ * @package     matoin
  * @subpackage  Template
  * @category    Front-views
  * @author      yzg <yangzhiguo0903@gmail.com>
- * @link        http://www.maotin.com/
+ * @link        http://www.matoin.com/
  */
 ?>
 <link href="static/css/formValidator.css" rel="stylesheet" />
@@ -56,7 +56,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
             <label for="remember">记住我的登录状态</label>
         </div>
         <div class="inputbox mt10 ml20">
-            <span class="ml60">还没有Maotin账户？ </span><a href="member/register">马上注册</a>
+            <span class="ml60">还没有matoin账户？ </span><a href="member/register">马上注册</a>
         </div>
         </form>
     </article>

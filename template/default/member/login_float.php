@@ -1,17 +1,17 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 /**
- * Maotin System
+ * matoin System
  *
- * 猫头鹰Maotin - 帮你寻找最有价值的东西
+ * 猫头鹰matoin - 帮你寻找最有价值的东西
  *
- * Maotin - to help you find the most valuable thing
+ * matoin - to help you find the most valuable thing
  *
- * @package    Maotin
+ * @package    matoin
  * @author     yzg <yangzhiguo0903@gmail.com>
- * @copyright  Copyright (c) 2011 - 2012, maotin.com.
+ * @copyright  Copyright (c) 2011 - 2012, matoin.com.
  * @license    GNU General Public License 2.0
- * @link       http://www.maotin.com/
+ * @link       http://www.matoin.com/
  * @version    $Id login_float.php v1.0.0 2012-01-02 10:28 $
  */
 
@@ -22,11 +22,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
  *
  * 浮动登录框
  *
- * @package     Maotin
+ * @package     matoin
  * @subpackage  Template
  * @category    Front-views
  * @author      yzg <yangzhiguo0903@gmail.com>
- * @link        http://www.maotin.com/
+ * @link        http://www.matoin.com/
  */
 ?>
 <div class="w480 pr" style="height: 220px;">
@@ -55,7 +55,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
     </div>
     <div class="fr wf-32 bc-eb hf100">
         <div class="pa" style="bottom: 13px; right:25px;">
-            <p class="pb5">还没有Maotin帐户？</p>
+            <p class="pb5">还没有matoin帐户？</p>
             <input class="btn w100" value="立即注册" type="button" onclick="redirect('member/register');" />
         </div>
         <a class="fr mr5 mt5 close" title="关闭" href="javascript:void(0);" onclick="mtHide('mt_login')">关闭</a>

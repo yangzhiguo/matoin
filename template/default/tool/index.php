@@ -1,17 +1,17 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 /**
- * Maotin System
+ * matoin System
  *
- * 猫头鹰Maotin - 寻找最有价值的东西
+ * 猫头鹰matoin - 寻找最有价值的东西
  *
- * Maotin - to help you find the most valuable thing
+ * matoin - to help you find the most valuable thing
  *
- * @package    Maotin
+ * @package    matoin
  * @author     yzg <yangzhiguo0903@gmail.com>
- * @copyright  Copyright (c) 2011 - 2012, maotin.com.
+ * @copyright  Copyright (c) 2011 - 2012, matoin.com.
  * @license    GNU General Public License 2.0
- * @link       http://www.maotin.com/
+ * @link       http://www.matoin.com/
  * @version    $Id wide.php v1.0.0 2012-01-10 23:04 $
  */
 
@@ -21,11 +21,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
  * 收藏工具模版
  *
  *
- * @package     Maotin
+ * @package     matoin
  * @subpackage  Template
  * @category    Front-views
  * @author      yzg <yangzhiguo0903@gmail.com>
- * @link        http://www.maotin.com/
+ * @link        http://www.matoin.com/
  */
 ?>
 <section class="content w960 clearfix">
@@ -43,7 +43,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
             <h3 class="pt10">还是搞不定？</h3>
             <div>
                 <p>亲，把问题反馈给我，我来帮你搞定！你可以：</p>
-                <p>1. 给我admin@maotin.com发邮件或者加入QQ群：<span class="b">230243937</span>，告诉我你遇到了什么问题，我会帮你解决。</p>
+                <p>1. 给我admin@matoin.com发邮件或者加入QQ群：<span class="b">230243937</span>，告诉我你遇到了什么问题，我会帮你解决。</p>
                 <p>2. 要不你换个浏览器吧。比如<a target="_blank" href="http://www.google.com/chrome/">Chrome</a>，<a target="_blank" href="http://firefox.com.cn/">Firefox</a></p>
             </div>
         </div>

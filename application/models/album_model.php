@@ -1,16 +1,16 @@
 <?php  if (!defined('BASEPATH')) exit('No direct script access allowed');
 /**
- * Maotin System
+ * matoin System
  *
- * 猫头鹰Maotin - 寻找最有价值的东西
+ * 猫头鹰matoin - 寻找最有价值的东西
  *
- * Maotin - to help you find the most valuable thing
+ * matoin - to help you find the most valuable thing
  *
- * @package    Maotin
+ * @package    matoin
  * @author     yzg <yangzhiguo0903@gmail.com>
- * @copyright  Copyright (c) 2011 - 2012, maotin.com.
+ * @copyright  Copyright (c) 2011 - 2012, matoin.com.
  * @license    GNU General Public License 2.0
- * @link       http://www.maotin.com/
+ * @link       http://www.matoin.com/
  * @version    $Id album_model.php v1.0.0 12-5-29 上午9:59 $
  */
 
@@ -19,11 +19,11 @@
 /**
  * 专辑模型
  *
- * @package     Maotin
+ * @package     matoin
  * @subpackage  models
  * @category    models
  * @author      yzg <yangzhiguo0903@gmail.com>
- * @link        http://www.maotin.com/
+ * @link        http://www.matoin.com/
  */
 class Album_model extends CI_Model
 {

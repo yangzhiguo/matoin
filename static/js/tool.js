@@ -1,8 +1,8 @@
 var mt_tool = {
     tool_version : '1.2.0',
-    site_url : "http://localhost/maotin/trunk",
+    site_url : "http://localhost/matoin/trunk",
     src_url : window.location.href,
-    filter_url : /(maotin.com)/i,
+    filter_url : /(matoin.com)/i,
     imglist : [],
     selected:[],
     minw:200,
