@@ -145,8 +145,8 @@ a#scrolltop:hover{background-position: -55px 0}
 /*串串烧*/
 .cros-nav{background: #FFEBEB;color:#FF7A9C}
 /*msg-box*/
-.x-msg-box{background:#FFF;height:70px;width:220px;margin-left:-110px;left:50%;top:-70px;position:fixed;z-index:9999;border-radius: 0 0 6px 6px}
-.x-msg-shadow{position:fixed;width:220px;height:70px;opacity:.3;filter:alpha(opacity=30);border:5px solid #000;z-index:9998;margin-left:-5px;border-top:none;border-radius: 0 0 10px 10px;background:#FFF}
-.x-msg-text{text-align:center;line-height:70px;font-weight:bold;font-size:14px}
-.x-msg-success{color:#588C0E}
-.x-msg-error{color:#FF7A9C}
+.x-msg-box{background:#588C0E;color:#FFF;height:30px;width:220px;margin-left:-110px;left:50%;top:-70px;position:fixed;z-index:9999;border-radius: 0 0 6px 6px}
+/*.x-msg-shadow{position:fixed;width:220px;height:70px;opacity:.3;filter:alpha(opacity=30);border:5px solid #000;z-index:9998;margin-left:-5px;border-top:none;border-radius: 0 0 10px 10px;background:#FFF}*/
+.x-msg-text{text-align:center;line-height:30px;font-weight:bold}
+.x-msg-success{background:#588C0E}
+.x-msg-error{background:#FF7A9C}

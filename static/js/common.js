@@ -117,10 +117,11 @@ function showMsgbox(msg, mode, func){
     if(isUndefined(mode)){
         mode = 'success';
     }
-    $('#append_parent').append('<div id="x-msg-box" class="x-msg-box"><div class="x-msg-shadow"></div><div class="x-msg-'+mode+'"><a class="x-msg-icon"></a><div class="x-msg-text">'+msg+'</div></div></div>');
-    $('.x-msg-box').animate({'top':0, 'opacity':1},500);
+    $('#append_parent').append('<div id="x-msg-box" class="x-msg-box"><div class="x-msg-'+mode+'"><a class="x-msg-icon"></a><div class="x-msg-text">'+msg+'</div></div></div>');
+    var box = $('#x-msg-box');
+    box.animate({'top':0, 'opacity':1},500);
     showMsgST = setTimeout(function(){
-        $('#x-msg-box').fadeOut('normal', function(){
+        box.animate({'top':- parseInt(box.height()) + 'px', 'opacity':0}, 'normal', function(){
             $(this).remove();
             if(typeof func == 'function'){
                 func();
@@ -128,7 +129,7 @@ function showMsgbox(msg, mode, func){
                 eval(func);
             }
         });
-    }, 1000);
+    }, 2000);
 }
 
 function mtWindow(k, url) {
