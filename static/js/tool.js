@@ -1,6 +1,6 @@
 var mt_tool = {
     tool_version : '1.2.0',
-    site_url : "http://localhost/matoin/trunk",
+    site_url : "http://localhost/matoin/",
     src_url : window.location.href,
     filter_url : /(matoin.com)/i,
     imglist : [],
