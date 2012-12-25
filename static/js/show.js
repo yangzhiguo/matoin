@@ -12,14 +12,61 @@ $(function(){
         }
     });
     $("#aside-fixed").barfixed({top:-45});
+
+    var wrapObj = $('#pic-area');
+    wrapObj.mousemove(function(e){
+        var ps = wrapObj.offset();
+        var ps_width = wrapObj.width();
+        var nxt = e.clientX > (ps.left+ps_width/2);
+        var curClass = nxt ? 'pic-mouse-next' : 'pic-mouse-prev';
+        wrapObj.attr('class',curClass);
+    });
+
+    wrapObj.click(function(e){
+        var ps = wrapObj.offset();
+        var ps_width = wrapObj.width();
+        var nxt = e.clientX > (ps.left+ps_width/2);
+        if(nxt){
+            showNext();
+        }else{
+            showPrev();
+        }
+    });
 });
-function changeDepict(olddepict, newdepict){
+function showNext(){
+    var nextid = 0;
+    if(LID.length> 0){
+        for(var i = 0; i<LID.length; i++){
+            if(LID[i] == PID && !isUndefined(LID[i+1])){
+                nextid = LID[i+1];
+            }
+        }
+        if(nextid> 0){
+            redirect('view/'+nextid);
+        }
+    }
+}
+function showPrev(){
+    var previd = 0;
+    if(LID.length> 0){
+        for(var i = 0; i<LID.length; i++){
+            if(LID[i] == PID && !isUndefined(LID[i-1])){
+                previd = LID[i-1];
+            }
+        }
+        if(previd> 0){
+            redirect('view/'+previd);
+        }
+    }
+}
+
+function changeDepict(oldDepict, newDepict){
     var image_depict = $('#image-depict');
-    var newd = $.trim(newdepict), oldd = $.trim(olddepict);
-    if(newd != '' && escape(newd) != oldd){
+    var newD = $.trim(newDepict), oldD = $.trim(oldDepict);
+    if(newD != '' && escape(newD) != oldD){
         mtAjxPost('editdepict', 'ed-loading', 'ed-loading', '', function(data){
             if(data == "1"){
-                image_depict.text(newd).bind('click', crt_depict_form);
+                image_depict.text(newD).bind('click', crt_depict_form);
             }
             else{
                 setTimeout("$('#ed-loading').hide()", 1000);
@@ -27,7 +74,7 @@ function changeDepict(olddepict, newdepict){
         });
         return false;
     }else{
-        image_depict.text(unescape(oldd)).bind('click', crt_depict_form);
+        image_depict.text(unescape(oldD)).bind('click', crt_depict_form);
     }
 }
 $.fn.barfixed = function (options){

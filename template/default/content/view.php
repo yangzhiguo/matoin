@@ -18,8 +18,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
             </div>
             <a class="heart<?php if($imageinfo->fave === 1):echo ' heart-on';endif;?> fr" data-src="<?php echo $imageinfo->imageid?>"></a>
         </div>
-        <div class="p20 tc">
-            <img alt="" style="max-width:540px;display:block;margin:0 auto" src="<?php echo $imageinfo->attachment?>" />
+        <div id="pic-area">
+            <img src="<?php echo $imageinfo->attachment?>" alt="<?php echo $imageinfo->depict?>">
         </div>
         <div class="p20" id="pic-comment">
             <div class="comm-list">
@@ -110,9 +110,7 @@ if(isset($other_image) && $other_image)
 </section>
 <script type="text/javascript">
 <?php if($imageinfo->commenttimes> 0){?>
-$(function(){
-    cmtpage(null, [<?php echo $imageinfo->imageid?>, <?php echo (int)$this->input->get('p');?>]);
-});
+$(function(){cmtpage(null, [<?php echo $imageinfo->imageid?>,<?php echo (int)$this->input->get('p');?>]);});
 <?php }?>
 <?php if(isset($userinfo) && $userinfo->uid> 0 && $userinfo->uid == $imageinfo->uid){?>
 var crt_depict_form = function(){
@@ -132,6 +130,7 @@ $(function(){
     $('#image-depict').click(crt_depict_form);
 });
 <?php }?>
+var LID = <?php echo '[' . implode(',', $neighbor) . ']'?>, PID = <?php echo $imageinfo->imageid;?>;
 </script>
 <script type="text/javascript" src="static/js/tag.js"></script>
 <script type="text/javascript" src="static/js/show.js"></script>

@@ -385,12 +385,21 @@ class Image_model extends CI_Model
             $gt_avg = $limit - $lt_len;
             $lt_avg = $lt_len;
         }
-        $result = array_merge(
+        $result['list'] = array_merge(
             array_reverse(
                 array_slice($gt_result, 0, $gt_avg)
             ),
             array_slice($lt_result, 0, $lt_avg)
         );
+        $nabor = array();
+        if( ! empty($result['list']))
+        {
+            foreach($result['list'] as $v)
+            {
+                $nabor[] = $v->imageid;
+            }
+        }
+        $result['neighbor'] = $nabor;
         unset($albumid, $imageid, $limit, $avg, $gt_avg, $result_len, $remind, $query, $lt_result, $lt_len, $lt_avg, $gt_result, $gt_len, $gt_avg);
         return $result;
     }

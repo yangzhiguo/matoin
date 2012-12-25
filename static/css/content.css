@@ -149,3 +149,8 @@ a#scrolltop:hover{background-position: -55px 0}
 .x-msg-text{text-align:center;line-height:30px;font-weight:bold}
 .x-msg-success{background:#269ACF}
 .x-msg-error{background:#FF7A9C}
+/*图片*/
+.pic-mouse-prev{cursor:url("../image/prev.cur"),auto}
+.pic-mouse-next{cursor:url("../image/next.cur"),auto}
+#pic-area{margin:20px;min-height:100px;background:url("../image/preview.gif") center center no-repeat;text-align:center}
+#pic-area img{max-width:540px}

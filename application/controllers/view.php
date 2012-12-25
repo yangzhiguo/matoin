@@ -49,7 +49,9 @@ class View extends MT_Controller
         if($imageinfo->albumid> 0)
         {
             $data['albuminfo'] = $this->Album_model->get_album($imageinfo->albumid, FALSE);
-            $data['other_image'] = $this->Image_model->get_random_image($imageinfo->albumid, $imageid, 6);
+            $random_image = $this->Image_model->get_random_image($imageinfo->albumid, $imageid, 6);
+            $data['other_image'] = $random_image['list'];
+            $data['neighbor'] = $random_image['neighbor'];
         }
         if($this->auth->uid> 0)
         {
