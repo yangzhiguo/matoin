@@ -49,7 +49,7 @@ if (isset($userinfo) && $userinfo->uid> 0)
         <div class="action-bar">
             <ul>
                 <li><a href="javascript:void(0);" onclick="$('.heart').click();return false;" class="tg-pink">喜欢</a></li>
-                <li><a href="#commentform" class="tg-green">评论</a></li>
+                <li><a href="<?php echo current_url()?>#addcomment" class="tg-green">评论</a></li>
                 <li><a class="tg-pink">分享</a></li>
             </ul>
         </div>
