@@ -33,8 +33,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 <head>
     <meta charset="UTF-8">
     <title><?php echo isset($seo['title']) ? $seo['title'] : '猫头鹰 - 优美图片休憩之地'?></title>
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
+    <meta name="keywords" content="猫头鹰,优美图片,美图,分享,收藏" />
+    <meta name="description" content="猫头鹰,优美图片休憩之地。这是一个收藏、分享、发现优美图片、清新图片的社区，是我们美好的栖息之地。" />
     <base href="<?php echo base_url();?>" />
     <link href="static/css/global.css" rel="stylesheet" />
     <link href="static/css/content.css" rel="stylesheet" />
