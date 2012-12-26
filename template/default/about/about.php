@@ -30,6 +30,8 @@
             </div>
             <h3 class="mb10 mt20">猫头鹰人生历程</h3>
             <p><span class="c-9">2012年11月</span><span class="b pl20">猫头鹰内测版诞生。</span></p>
+            <p><span class="c-9">2012年12月</span><span class="b pl20">取消对IE6的支持。</span></p>
+            <p><span class="c-9">2012年12月</span><span class="b pl20">可以查看大图了哦。</span></p>
         </div>
     </article>
 </section>
