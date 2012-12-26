@@ -35,9 +35,9 @@ class Home extends MT_Controller
         $this->load->model('Image_model');
         $this->load->library('pagination');
 
-        $pagesize = 20;
+        $pagesize = 30;
         $config['base_url']   = base_url();
-        $config['total_rows'] = 20 * 10;
+        $config['total_rows'] = 16 * 10;
         $config['per_page']   = $pagesize;
 
         $this->pagination->initialize($config);
