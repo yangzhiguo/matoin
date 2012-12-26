@@ -60,7 +60,7 @@
             <p class="mt10"><a class="b" href="member/<?php echo $albuminfo->uid?>"><?php echo $albuminfo->username?></a>&nbsp;创建于<?php echo time_ago($albuminfo->dateline)?></p>
             <p class="mt10"><?php echo $albuminfo->depict?></p>
         </div>
-        <a href="javascript:void(0);" id="scrolltop" class="tg-green">返回顶部</a>
+        <a href="javascript:void(0);" id="scrolltop">返回顶部</a>
     </aside>
 </section>
 <script type="text/javascript" src="static/js/content.js"></script>

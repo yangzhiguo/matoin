@@ -50,7 +50,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
         <span id="collectloading" class="pl10"></span>
         </form>
     </article>
-    <aside class="w220 fr"><a href="javascript:void(0);" id="scrolltop" class="tg-green" hidefocus="true">返回顶部</a></aside>
+    <aside class="w220 fr"><a href="javascript:void(0);" id="scrolltop" hidefocus="true">返回顶部</a></aside>
 </section>
 <script type="text/javascript" src="static/js/collect.js" ></script>
 <script type="text/javascript">

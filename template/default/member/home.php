@@ -50,7 +50,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
         </ul>
         <?php if(isset($page) && $page):?><div class="page pt20"><?php echo $page?></div><?php endif;?>
     </article>
-    <aside class="w220 mt10 fr"><?php echo member_modelfield($memberinfo->uid);?><a href="javascript:void(0);" id="scrolltop" class="tg-green">返回顶部</a></aside>
+    <aside class="w220 mt10 fr"><?php echo member_modelfield($memberinfo->uid);?><a href="javascript:void(0);" id="scrolltop">返回顶部</a></aside>
 </section>
 <script type="text/javascript" src="static/js/content.js"></script>
 <?php

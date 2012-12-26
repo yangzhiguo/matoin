@@ -127,8 +127,7 @@ a.tg-purple:hover, a.tg-purple-hover{background: #C28896;color:#FFF}
 .tag-wrap li .deletetag:hover{opacity:1;filter:alpha(opacity=100)}
 /*返回顶部*/
 #scrolltop{position:fixed;bottom:100px;cursor:pointer;width:55px;height:55px;padding:0;overflow:hidden;line-height:500px;display:none;
-    background:url(../image/backTop.png) no-repeat 0 0;}
-a#scrolltop:hover{background-position: -55px 0}
+    background:url(../image/backTop.png) no-repeat -55px 0}
 /*tabs导航*/
 .tabs li{float:left}
 .tabs a{display:block;height:28px;line-height:28px;padding:0 15px;color:#588C0E}

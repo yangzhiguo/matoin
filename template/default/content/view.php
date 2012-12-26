@@ -53,7 +53,7 @@ if (isset($userinfo) && $userinfo->uid> 0)
                 <li><a class="tg-pink">分享</a></li>
             </ul>
         </div>
-        <a href="javascript:void(0);" id="scrolltop" class="tg-green">返回顶部</a>
+        <a href="javascript:void(0);" id="scrolltop">返回顶部</a>
     </div>
     <aside class="relaside fr pr">
 <?php
