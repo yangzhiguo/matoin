@@ -12,7 +12,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
     <article class="bc-ff fl mt10 sd w580">
         <h3 class="fn" id="image-depict"><?php echo $imageinfo->depict?></h3>
         <div class="clearfix pt20 pr20 pl20">
-            <a class="fl" href="member/<?php echo $imageinfo->uid?>"><img class="block" alt="" src="<?php echo avatar_uri($imageinfo->uid, 'small')?>" /></a>
+            <a class="fl" href="member/<?php echo $imageinfo->uid?>"><img class="block" width="35" src="<?php echo avatar_uri($imageinfo->uid, 'small')?>" /></a>
             <div class="fl ml10">
                 <p><a href="member/<?php echo $imageinfo->uid?>" class="b"><?php echo $imageinfo->username?></a>&nbsp;发布于&nbsp;<?php echo time_ago($imageinfo->dateline)?></p>
             </div>
@@ -20,6 +20,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
         </div>
         <div id="pic-area">
             <img src="<?php echo $imageinfo->attachment?>" alt="<?php echo $imageinfo->depict?>">
+            <a href="<?php echo $imageinfo->attachment?>">查看大图</a>
         </div>
         <div class="p20" id="pic-comment">
             <div class="comm-list">
@@ -109,9 +110,16 @@ if(isset($other_image) && $other_image)
     </aside>
 </section>
 <script type="text/javascript">
+$(function(){
 <?php if($imageinfo->commenttimes> 0){?>
-$(function(){cmtpage(null, [<?php echo $imageinfo->imageid?>,<?php echo (int)$this->input->get('p');?>]);});
+    cmtpage(null, [<?php echo $imageinfo->imageid?>,<?php echo (int)$this->input->get('p');?>]);
 <?php }?>
+    $('#pic-area a').lightBox({
+        imageLoading:'static/image/preview.gif',
+        imageBtnClose:'static/image/lightbox-btn-close.gif',
+        imageBlank: 'static/image/lightbox-blank.gif'
+    });
+});
 <?php if(isset($userinfo) && $userinfo->uid> 0 && $userinfo->uid == $imageinfo->uid){?>
 var crt_depict_form = function(){
     var val = $.trim($(this).text());
@@ -135,3 +143,4 @@ var LID = <?php echo '[' . implode(',', $neighbor) . ']'?>, PID = <?php echo $im
 <script type="text/javascript" src="static/js/tag.js"></script>
 <script type="text/javascript" src="static/js/show.js"></script>
 <script type="text/javascript" src="static/js/comment.js"></script>
+<script type="text/javascript" src="static/js/jquery.lightbox-0.5.pack.js"></script>

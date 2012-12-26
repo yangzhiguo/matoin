@@ -14,6 +14,13 @@ $(function(){
     $("#aside-fixed").barfixed({top:-45});
 
     var wrapObj = $('#pic-area');
+    wrapObj.hover(function(){
+        $(this).find('a').stop().animate({top:0,right:0}, 300);
+    },function(){
+        $(this).find('a').stop().animate({top:'-35px'}, 200, 'swing', function(){
+            $(this).css({right:'-35px'});
+        });
+    });
     wrapObj.mousemove(function(e){
         var ps = wrapObj.offset();
         var ps_width = wrapObj.width();
