@@ -68,6 +68,7 @@ class Home extends MT_Controller
             'dateline >' => TIME - 604800
         );
         $data['imagelist'] = $this->Image_model->get_custom_image($option, $condition);
+        $data['hot'] = 1;
         $this->template('common/header,content/index,common/footer', $data);
     }
 }

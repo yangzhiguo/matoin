@@ -49,7 +49,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
         <ul id="nav-list">
             <li><a href="<?php echo site_url()?>">首页</a></li>
             <li><a href="<?php echo site_url('hot')?>">热门</a></li>
-            <li><a href="<?php echo site_url()?>">手气</a></li>
             <li><a href="<?php echo site_url()?>">专辑</a></li>
             <li><a href="<?php echo site_url('tag')?>">标签</a></li>
             <li><a href="<?php echo site_url('tool')?>">收藏工具</a></li>
