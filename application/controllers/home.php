@@ -71,6 +71,31 @@ class Home extends MT_Controller
         $data['hot'] = 1;
         $this->template('common/header,content/index,common/footer', $data);
     }
+
+    public function albums()
+    {
+        $data = array();
+        $this->load->model('Album_model');
+
+        $total_rows = (int)$this->Album_model->get_count_of_album();
+        if($total_rows> 0)
+        {
+            $this->load->library('pagination');
+            $pagesize = 12;
+            $config['base_url']   = base_url('albums');
+            $config['total_rows'] = $total_rows;
+            $config['per_page']   = $pagesize;
+
+            $this->pagination->initialize($config);
+            $offset = (int)$this->input->get($this->pagination->query_string_segment);
+
+            $data['page'] = $this->pagination->create_links();
+            $data['listinfo']   = $this->Album_model->get_total_albums($pagesize, ($offset - 1) * $pagesize);
+        }
+//        $this->output->enable_profiler(TRUE);
+        $data['total_rows'] = $total_rows;
+        $this->template('common/header,album/album,common/footer', $data);
+    }
 }
 
 //END Home Class

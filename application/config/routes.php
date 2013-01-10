@@ -55,6 +55,7 @@ $route['album/(:num)']          = "album/index/$1";  //专辑首页
 $route['view/(:num)']           = 'view/index/$1';  //图片页
 $route['tag/(:num)']            = 'tag/tag_content/$1';  //标签详情
 $route['hot']                   = 'home/hot';  //热门
+$route['albums']                = 'home/albums';  //专辑
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

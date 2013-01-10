@@ -289,6 +289,47 @@ class Album_model extends CI_Model
         $query->free_result();
         return $result;
     }
+
+    /**
+     * 查询专辑数量
+     *
+     * @return mixed
+     */
+    public function get_count_of_album()
+    {
+        return $this->db->from(self::T_ALBUM)->count_all_results();
+    }
+
+    /**
+     * 取得所有的专辑列表
+     *
+     * @param int $limit
+     * @param int $offset
+     * @return object|null
+     */
+    public function get_total_albums($limit = 100, $offset = 0)
+    {
+        try
+        {
+            $this->db
+                ->select('albumid,albumname,dateline,updatetime,images,coverpic')
+                ->from(self::T_ALBUM)
+                ->order_by('images', 'DESC')
+                ->limit($limit, $offset);
+            $query = $this->db->get();
+            if ($query->num_rows())
+            {
+                $result = $query->result();
+                $query->free_result();
+                return $result;
+            }
+        }
+        catch(Exception $e)
+        {
+//            throw $e;
+        }
+        return NULL;
+    }
 }
 
 //END Album_model Class
