@@ -30,7 +30,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
  */
 ?>
 <section class="content w960 clearfix">
-    <?php if(!($userinfo->uid> 0)){?><nav class="wrapper mt10">
+    <?php if(!($userinfo->uid> 0)){?><nav class="wrapper mt20">
         <div class="wf-68 clearfix" style="margin:0 auto;padding:10px 0;text-align:center">
             <p class="fl" style="line-height:32px;">在猫头鹰，你可以1.收藏你喜欢的图片。2.创建自己的专辑。3.和热爱清新的朋友畅聊。</p>
             <a class="fr btn w100 pl10 pr10" href="member/register">开始猫头鹰之旅</a>
