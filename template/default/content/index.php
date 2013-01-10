@@ -37,7 +37,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
         </div>
     </nav><?php }?>
     <?php if(isset($hot) && $hot){?><h1 class="mt20 fl wf100">热门图片</h1><?php }?>
-    <article class="wrapper mt10">
+    <article class="wrapper mt20">
         <ul class="clearfix" id="pic-list" style="padding:26px 0 26px 26px">
             <?php if(isset($imagelist) && $imagelist){foreach($imagelist as $perimage){?>
             <li>
