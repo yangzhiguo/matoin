@@ -1,8 +1,8 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');?>
 <link href="static/css/album.css" rel="stylesheet" />
 <style type="text/css">
-    #albumlist li{width:188px;height:188px}
-    .album-title{width: 178px}
+#albumlist li{width:188px;height:188px}
+.album-title{width: 178px}
 </style>
 <section class="clearfix content w960">
     <h3 class="fn mt20 fl">所有专辑</h3>
